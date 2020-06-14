@@ -5,7 +5,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 
 export const IndexPageTemplate = ({ intro }) => (
-  <>
+  <div className="has-background-white-bis">
     <header
       className="py-6 pattern-cross-dots-lg has-background-primary-light has-text-primary"
       style={{ height: 256 }}
@@ -145,7 +145,7 @@ export const IndexPageTemplate = ({ intro }) => (
         <img src="/img/signature.png" style={{ height: 64 }} />
       </div>
     </footer>
-  </>
+  </div>
 );
 
 const IndexPage = ({ data }) => {
