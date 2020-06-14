@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
+import PricingMenuItem from "../components/PricingMenu";
 
-export const IndexPageTemplate = ({ intro }) => (
+export const IndexPageTemplate = ({ intro, pricing }) => (
   <div className="has-background-white-bis">
     <header
       className="py-6 pattern-cross-dots-lg has-background-primary-light has-text-primary"
@@ -25,81 +26,13 @@ export const IndexPageTemplate = ({ intro }) => (
       <div className="container has-text-centered content">
         <h2>Price List</h2>
         <div class="columns is-multiline">
-          <div class="column is-one-thirds">
-            <h3 className="has-text-primary-dark">Macarons</h3>
-            <div className="level is-mobile">
-              <div className="level-left">Single Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Two Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Small Box (6)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Large Box (12)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Custom Order (24+)</div>
-              <div className="level-right has-text-weight-bold">
-                $2.00 per mac
-              </div>
-            </div>
-          </div>
-          <div class="column is-one-thirds">
-            <h3 className="has-text-primary-dark">Cake</h3>
-            <div className="level is-mobile">
-              <div className="level-left">Single Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Two Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Small Box (6)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Large Box (12)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Custom Order (24+)</div>
-              <div className="level-right has-text-weight-bold">
-                $2.00 per mac
-              </div>
-            </div>
-          </div>
-          <div class="column is-one-thirds">
-            <h3 className="has-text-primary-dark">Other</h3>
-            <div className="level is-mobile">
-              <div className="level-left">Single Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Two Macaron</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Small Box (6)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Large Box (12)</div>
-              <div className="level-right has-text-weight-bold">$3.00</div>
-            </div>
-            <div className="level is-mobile">
-              <div className="level-left">Custom Order (24+)</div>
-              <div className="level-right has-text-weight-bold">
-                $2.00 per mac
-              </div>
-            </div>
-          </div>
+          {pricing.map((item) => (
+            <PricingMenuItem
+              key={item.category}
+              category={item.category}
+              items={item.items}
+            />
+          ))}
         </div>
       </div>
     </section>
@@ -175,6 +108,13 @@ export const pageQuery = graphql`
         intro {
           heading
           description
+        }
+        pricing {
+          category
+          items {
+            name
+            price
+          }
         }
       }
     }
