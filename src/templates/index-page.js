@@ -86,7 +86,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <IndexPageTemplate intro={frontmatter.intro} />
+      <IndexPageTemplate
+        intro={frontmatter.intro}
+        pricing={frontmatter.pricing}
+      />
     </Layout>
   );
 };

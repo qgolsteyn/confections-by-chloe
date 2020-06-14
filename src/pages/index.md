@@ -18,5 +18,23 @@ pricing:
       - name: One macaron
         price: $3.00
       - name: Two macarons
-        price: $5.00
+        price: $5.50
+      - name: Small box (6)
+        price: $15.00
+      - name: Large box (12)
+        price: $28.00
+      - name: Custom orders (24+)
+        price: $2.00 per mac
+  - category: Cake
+    items:
+      - name: Cupcakes (12)
+        price: $25.00
+      - name: 6 inch round cake
+        price: $35.00
+      - name: 8 inch round cake
+        price: $45.00
+  - category: Other
+    items:
+      - name: Donuts (4)
+        price: $12.00
 ---
