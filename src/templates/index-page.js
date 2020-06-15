@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
   );
 
   return (
-    <div className="has-background-white-bis">
+    <div id="wrapper" className="has-background-white-bis">
       <header
         className="py-6 pattern-cross-dots-lg has-background-primary-light has-text-primary"
         style={{ height: 256 }}
@@ -37,8 +37,21 @@ export const IndexPageTemplate = ({
       <div class="pattern-diagonal-stripes-sm pt-5 has-text-primary-light"></div>
       <section className="section">
         <div className="container has-text-centered content pt-6 is-smaller">
-          <h1>{heading}</h1>
+          <h1 className="title has-text-primary-dark">{heading}</h1>
           <p className="is-size-5">{description}</p>
+          <div className="mt-6">
+            <a
+              className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4"
+              href={`mailto:${email}`}
+            >
+              💌 {email}
+            </a>
+          </div>
+          <div className="mt-5 ">
+            <span className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4">
+              📍 Lethbridge, AB
+            </span>
+          </div>
         </div>
       </section>
       <section className="section">
@@ -90,28 +103,18 @@ export const IndexPageTemplate = ({
         <div className="container has-text-centered content pb-6 is-smaller">
           <h2>{orderTitle}</h2>
           <p>{orderInfo}</p>
-          <h3>
+          <p>
             {email && (
-              <div className="mb-5">
+              <div className="mt-6">
                 <a
-                  className="has-text-primary-dark has-background-primary-light py-1 px-1 mb-4"
+                  className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4"
                   href={`mailto:${email}`}
                 >
-                  {email}
+                  💌 {email}
                 </a>
               </div>
             )}
-            {phone && (
-              <div className="mb-5">
-                <a
-                  className="has-text-primary-dark has-background-primary-light py-1 px-1"
-                  href="#"
-                >
-                  {phone}
-                </a>
-              </div>
-            )}
-          </h3>
+          </p>
         </div>
       </section>
       <div class="pattern-diagonal-stripes-sm pt-5 has-text-primary"></div>
