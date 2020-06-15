@@ -16,36 +16,39 @@ confections:
   - category: Macarons
     items:
       - name: Oh Maple
-        description:
-          Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s
+        description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s
           then smothered in chopped peanuts! Yum!!
         image: /img/1.jpg
+        src: /img/1.jpg
       - name: Chocolate with Whipped Cream
         description: Crazy Delicious! Chocolate dipped, whipped cream filled Bizmark.
         image: /img/2.jpg
+        src: /img/2.jpg
       - name: The Classic
         description: The perfect ratio of chocolate to Spudnut! Divine!
         image: /img/3.jpg
+        src: /img/3.jpg
       - name: The Bizmark
-        description:
-          No sinking ships with this raspberry and apple filled Spudnut.
+        description: No sinking ships with this raspberry and apple filled Spudnut.
           Rolled in sugar goodness!
         image: /img/4.jpg
+        src: /img/4.jpg
       - name: The Purist
         description: Just Glaze!! Not too sweet and not too gooey. Simply perfection!
         image: /img/5.jpg
+        src: /img/5.jpg
       - name: Coconut with Cream Cheese
-        description:
-          This Spudnut is topped with a decadent cream cheese frosting and
+        description: This Spudnut is topped with a decadent cream cheese frosting and
           then rolled in toasted coconut.
         image: /img/6.jpg
+        src: /img/6.jpg
   - category: Cakes
     items:
       - name: Oh Maple
-        description:
-          Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s
+        description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s
           then smothered in chopped peanuts! Yum!!
         image: /img/1.jpg
+        src: /img/6.jpg
 pricingTitle: Pricing
 pricing:
   - category: Macaron
@@ -83,7 +86,7 @@ orderInfo: >
   varius sapien, non pharetra augue. Nulla malesuada fringilla purus ut aliquam.
   Nunc a rhoncus tortor. Nulla mauris neque, pulvinar interdum mi a, vestibulum
   convallis mauris.
-email: qgolsteyn@gmail.com
+email: chloedevoy@gmail.com
 phone: ""
 instagram: https://www.instagram.com/confections.bychloe/
 facebook: ""
