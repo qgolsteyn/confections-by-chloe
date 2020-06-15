@@ -55,22 +55,22 @@ confections:
     items:
       - name: Oh Maple
         description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s then smothered in chopped peanuts! Yum!!
-        src: img/1.jpg
+        image: img/1.jpg
       - name: Chocolate with Whipped Cream
         description: Crazy Delicious! Chocolate dipped, whipped cream filled Bizmark.
-        src: img/2.jpg
+        image: img/2.jpg
       - name: The Classic
         description: The perfect ratio of chocolate to Spudnut! Divine!
-        src: img/3.jpg
+        image: img/3.jpg
       - name: The Bizmark
         description: No sinking ships with this raspberry and apple filled Spudnut. Rolled in sugar goodness!
-        src: img/4.jpg
+        image: img/4.jpg
       - name: The Purist
         description: Just Glaze!! Not too sweet and not too gooey. Simply perfection!
-        src: img/5.jpg
+        image: img/5.jpg
   - category: Cakes
     items:
       - name: Oh Maple
         description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s then smothered in chopped peanuts! Yum!!
-        src: img/1.jpg
+        image: img/1.jpg
 ---

@@ -64,11 +64,7 @@ export const IndexPageTemplate = ({
               confections.find((item) => item.category === activeCollection)
                 .items || []
             ).map((item) => (
-              <ConfectionItem
-                name={item.name}
-                description={item.description}
-                src={item.src}
-              />
+              <ConfectionItem item={item} />
             ))}
           </div>
         </div>
@@ -176,7 +172,13 @@ export const pageQuery = graphql`
           items {
             name
             description
-            src
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

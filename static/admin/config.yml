@@ -28,25 +28,6 @@ collections:
           - { label: Heading, name: heading, widget: string }
           - { label: Description, name: description, widget: text }
           - {
-              label: Pricing list,
-              name: pricing,
-              widget: list,
-              fields:
-                [
-                  { label: Category, name: category, widget: string },
-                  {
-                    label: Items,
-                    name: items,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Name, name: name, widget: string },
-                        { label: Price, name: price, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
               label: Confections,
               name: confections,
               widget: list,
@@ -70,8 +51,27 @@ collections:
                   },
                 ],
             }
+          - {
+              label: Pricing list,
+              name: pricing,
+              widget: list,
+              fields:
+                [
+                  { label: Category, name: category, widget: string },
+                  {
+                    label: Items,
+                    name: items,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Name, name: name, widget: string },
+                        { label: Price, name: price, widget: string },
+                      ],
+                  },
+                ],
+            }
           - { label: Order Info, name: orderInfo, widget: text }
-          - { label: Email, name: email, widget: text }
-          - { label: Phone, name: phone, widget: text }
-          - { label: Instagram, name: instagram, widget: text }
-          - { label: Facebook, name: facebook, widget: text }
+          - { label: Email, name: email, widget: string }
+          - { label: Phone, name: phone, widget: string }
+          - { label: Instagram, name: instagram, widget: string }
+          - { label: Facebook, name: facebook, widget: string }
