@@ -64,11 +64,8 @@ export const IndexPageTemplate = ({
           </div>
           <div class="columns is-multiline is-centered content">
             {(
-              (
-                confections.find(
-                  (item) => item.category === activeCollection
-                ) || collections[0]
-              ).items || []
+              confections.find((item) => item.category === activeCollection)
+                .items || []
             ).map((item) => (
               <ConfectionItem item={item} />
             ))}
@@ -178,6 +175,9 @@ export const pageQuery = graphql`
         facebook
         instagram
         phone
+        orderTitle
+        pricingTitle
+        confectionsTitle
         pricing {
           category
           items {
