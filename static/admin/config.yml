@@ -46,7 +46,7 @@ collections:
                   },
                 ],
             }
-            - {
+          - {
               label: Confections,
               name: confections,
               widget: list,
@@ -60,7 +60,11 @@ collections:
                     fields:
                       [
                         { label: Name, name: name, widget: string },
-                        { label: Description, name: description, widget: string },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: string,
+                        },
                         { label: Image, name: src, widget: image },
                       ],
                   },
