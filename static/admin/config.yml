@@ -27,6 +27,7 @@ collections:
             }
           - { label: Heading, name: heading, widget: string }
           - { label: Description, name: description, widget: text }
+          - { label: Confections Title, name: confectionsTitle, widget: string }
           - {
               label: Confections,
               name: confections,
@@ -51,6 +52,7 @@ collections:
                   },
                 ],
             }
+          - { label: Pricing List Title, name: pricingTitle, widget: string }
           - {
               label: Pricing list,
               name: pricing,
@@ -70,6 +72,7 @@ collections:
                   },
                 ],
             }
+          - { label: Order Title, name: orderTitle, widget: string }
           - { label: Order Info, name: orderInfo, widget: text }
           - { label: Email, name: email, widget: string }
           - { label: Phone, name: phone, widget: string }

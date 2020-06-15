@@ -1,6 +1,9 @@
 ---
 templateKey: index-page
 heading: Confections by Chloe
+confectionsTitle: "Our confections"
+pricingTitle: "Pricing"
+orderTitle: "Make an order!"
 description: >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id arcu
   porttitor, mollis nibh a, venenatis odio. Mauris auctor aliquam lorem, eu
@@ -55,22 +58,22 @@ confections:
     items:
       - name: Oh Maple
         description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s then smothered in chopped peanuts! Yum!!
-        image: img/1.jpg
+        image: /img/1.jpg
       - name: Chocolate with Whipped Cream
         description: Crazy Delicious! Chocolate dipped, whipped cream filled Bizmark.
-        image: img/2.jpg
+        image: /img/2.jpg
       - name: The Classic
         description: The perfect ratio of chocolate to Spudnut! Divine!
-        image: img/3.jpg
+        image: /img/3.jpg
       - name: The Bizmark
         description: No sinking ships with this raspberry and apple filled Spudnut. Rolled in sugar goodness!
-        image: img/4.jpg
+        image: /img/4.jpg
       - name: The Purist
         description: Just Glaze!! Not too sweet and not too gooey. Simply perfection!
-        image: img/5.jpg
+        image: /img/5.jpg
   - category: Cakes
     items:
       - name: Oh Maple
         description: Oh Maple…You Nut!! - Maple glaze coats this piece of heaven, that’s then smothered in chopped peanuts! Yum!!
-        image: img/1.jpg
+        image: /img/1.jpg
 ---

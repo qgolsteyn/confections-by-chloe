@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import PricingMenuItem from "../components/PricingMenu";
@@ -15,6 +15,9 @@ export const IndexPageTemplate = ({
   instagram,
   phone,
   pricing = [],
+  orderTitle,
+  pricingTitle,
+  confectionsTitle,
   confections = [{ category: "none", items: [] }],
 }) => {
   const [activeCollection, setActiveCollection] = React.useState(
@@ -28,7 +31,7 @@ export const IndexPageTemplate = ({
         style={{ height: 256 }}
       >
         <div className="container has-text-centered">
-          <img src="/img/logo.png" style={{ height: 256 }} />
+          <img src="/img/logo.png" style={{ height: 256 }} alt="logo" />
         </div>
       </header>
       <div class="pattern-diagonal-stripes-sm pt-5 has-text-primary-light"></div>
@@ -41,7 +44,7 @@ export const IndexPageTemplate = ({
       <section className="section">
         <div className="container has-text-centered">
           <div className="content is-smaller">
-            <h2>Our confections</h2>
+            <h2>{confectionsTitle}</h2>
           </div>
           <div class="tabs is-toggle is-centered py-4">
             <ul>
@@ -61,8 +64,11 @@ export const IndexPageTemplate = ({
           </div>
           <div class="columns is-multiline is-centered content">
             {(
-              confections.find((item) => item.category === activeCollection)
-                .items || []
+              (
+                confections.find(
+                  (item) => item.category === activeCollection
+                ) || collections[0]
+              ).items || []
             ).map((item) => (
               <ConfectionItem item={item} />
             ))}
@@ -71,7 +77,7 @@ export const IndexPageTemplate = ({
       </section>
       <section className="section">
         <div className="container has-text-centered content">
-          <h2>Price List</h2>
+          <h2>{pricingTitle}</h2>
           <div class="columns is-multiline is-centered">
             {pricing.map((item) => (
               <PricingMenuItem
@@ -85,7 +91,7 @@ export const IndexPageTemplate = ({
       </section>
       <section className="section">
         <div className="container has-text-centered content pb-6 is-smaller">
-          <h2>Make an order!</h2>
+          <h2>{orderTitle}</h2>
           <p>{orderInfo}</p>
           <h3>
             {email && (
@@ -116,13 +122,25 @@ export const IndexPageTemplate = ({
         <div className="container has-text-centered">
           <div className="py-4">
             {facebook && (
-              <a href={facebook} class="fa fa-facebook has-text-black"></a>
+              <a
+                href={facebook}
+                class="fa fa-facebook has-text-black"
+                rel="me"
+              ></a>
             )}
             {instagram && (
-              <a href={instagram} class="fa fa-instagram has-text-black"></a>
+              <a
+                href={instagram}
+                class="fa fa-instagram has-text-black"
+                rel="me"
+              ></a>
             )}
           </div>
-          <img src="/img/signature.png" style={{ height: 64 }} />
+          <img
+            src="/img/signature.png"
+            style={{ height: 64 }}
+            alt="signature"
+          />
         </div>
       </footer>
     </div>

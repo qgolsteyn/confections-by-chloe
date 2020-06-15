@@ -1,12 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: "Confections by Chloe",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+    description: "Home baked treats made with love ♡",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
@@ -29,6 +26,8 @@ module.exports = {
         name: "images",
       },
     },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
