@@ -3,7 +3,7 @@ import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
 const ConfectionItem = ({ item }) => {
   return (
-    <div class="column is-one-half-tablet is-one-quarter-desktop">
+    <div class="column is-half-mobile is-one-third-tablet is-one-quarter-desktop">
       <div class="pattern-diagonal-stripes-sm has-background-primary-light has-text-primary my-2 mx-2">
         <PreviewCompatibleImage
           imageInfo={item}

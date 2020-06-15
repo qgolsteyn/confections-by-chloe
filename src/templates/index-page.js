@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
               ))}
             </ul>
           </div>
-          <div class="columns is-multiline is-centered content">
+          <div class="columns is-multiline is-centered content is-mobile">
             {(
               confections.find((item) => item.category === activeCollection)
                 .items || []
