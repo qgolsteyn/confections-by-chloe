@@ -47,7 +47,7 @@ collections:
                           name: description,
                           widget: string,
                         },
-                        { label: Image, name: src, widget: image },
+                        { label: Image, name: image, widget: image },
                       ],
                   },
                 ],
