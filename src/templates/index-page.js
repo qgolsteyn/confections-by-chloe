@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
       <div class="pattern-diagonal-stripes-sm pt-5 has-text-primary-light"></div>
       <section className="section">
         <div className="container has-text-centered content pt-6 is-smaller">
-          <h1 className="title has-text-primary-dark">{heading}</h1>
+          <h1 className="title">{heading}</h1>
           <p className="is-size-5">{description}</p>
           <div className="mt-6">
             <a
