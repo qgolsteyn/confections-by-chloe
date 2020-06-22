@@ -15,6 +15,10 @@ confections:
         name: "Strawberry and Lime Margarita macarons "
         description: Perfect for summer!
   - category: Cakes
+    items:
+      - image: /img/unnamed.jpg
+        name: Chocolate Strawberry cake
+        description: 6 inch cake
 pricingTitle: Pricing
 pricing:
   - category: Macaron
