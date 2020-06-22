@@ -19,6 +19,9 @@ confections:
       - image: /img/unnamed.jpg
         name: Chocolate Strawberry cake
         description: 6 inch cake
+      - image: /img/unnamed-1-.jpg
+        name: Sun themes citrus cake
+        description: 6 inch cake
 pricingTitle: Pricing
 pricing:
   - category: Macaron
