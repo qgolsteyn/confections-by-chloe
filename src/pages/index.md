@@ -7,6 +7,13 @@ description: |-
 confectionsTitle: Confections
 confections:
   - category: Macarons
+    items:
+      - image: /img/unnamed-4-.jpg
+        name: " Raspberry and Vanilla bean macarons"
+        description: " Perfect for a tea party!"
+      - image: /img/unnamed-3-.jpg
+        name: "Strawberry and Lime Margarita macarons "
+        description: Perfect for summer!
   - category: Cakes
 pricingTitle: Pricing
 pricing:
