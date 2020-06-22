@@ -7,14 +7,11 @@ description: |-
 confectionsTitle: Confections
 confections:
   - category: Macarons
+  - category: Cakes
 pricingTitle: Pricing
 pricing:
   - category: Macaron
     items:
-      - name: One macaron
-        price: $3.00
-      - name: Two macarons
-        price: $5.50
       - name: Small box (6)
         price: $15.00
       - name: Large box (12)
@@ -24,17 +21,19 @@ pricing:
   - category: Cake
     items:
       - name: Cupcakes (12)
-        price: $25.00
+        price: $30.00
       - name: 6 inch round cake
-        price: $35.00
+        price: $55.00
       - name: 8 inch round cake
-        price: $45.00
+        price: $70.00
   - category: Other
     items:
       - name: Donuts (4)
-        price: $12.00
+        price: $15.00
+      - name: Cinnamon buns (6) with cream cheese icing
+        price: $20.00
 orderTitle: Make an order!
-orderInfo: For order inquiries please contact chloedevoy@gmail.com
+orderInfo: For inquiries please contact chloedevoy@gmail.com
 email: chloedevoy@gmail.com
 phone: ""
 instagram: https://www.instagram.com/confections.bychloe/
