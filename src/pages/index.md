@@ -1,16 +1,9 @@
 ---
 templateKey: index-page
 heading: Confections by Chloe
-description: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id arcu
-  porttitor, mollis nibh a, venenatis odio. Mauris auctor aliquam lorem, eu
-  suscipit justo. Mauris molestie luctus urna sit amet porttitor. Vestibulum in
-  mi porta, aliquet ligula sit amet, sodales elit. Donec vel nulla rutrum,
-  interdum dui eu, lacinia metus. Nulla tellus justo, faucibus id ullamcorper a,
-  fermentum at dui. Curabitur maximus ipsum ut ultricies sodales. Nulla ut
-  varius sapien, non pharetra augue. Nulla malesuada fringilla purus ut aliquam.
-  Nunc a rhoncus tortor. Nulla mauris neque, pulvinar interdum mi a, vestibulum
-  convallis mauris.
+description: |-
+  Home baked treats made with love! 
+  Specializing in custom cakes, cookies and macarons
 confectionsTitle: Our confections
 confections:
   - category: Macarons
@@ -76,16 +69,7 @@ pricing:
       - name: Donuts (4)
         price: $12.00
 orderTitle: Make an order!
-orderInfo: >
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id arcu
-  porttitor, mollis nibh a, venenatis odio. Mauris auctor aliquam lorem, eu
-  suscipit justo. Mauris molestie luctus urna sit amet porttitor. Vestibulum in
-  mi porta, aliquet ligula sit amet, sodales elit. Donec vel nulla rutrum,
-  interdum dui eu, lacinia metus. Nulla tellus justo, faucibus id ullamcorper a,
-  fermentum at dui. Curabitur maximus ipsum ut ultricies sodales. Nulla ut
-  varius sapien, non pharetra augue. Nulla malesuada fringilla purus ut aliquam.
-  Nunc a rhoncus tortor. Nulla mauris neque, pulvinar interdum mi a, vestibulum
-  convallis mauris.
+orderInfo: For order inquiries please contact chloedevoy@gmail.com
 email: chloedevoy@gmail.com
 phone: ""
 instagram: https://www.instagram.com/confections.bychloe/
