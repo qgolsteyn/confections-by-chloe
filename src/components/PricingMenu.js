@@ -8,7 +8,7 @@ const PricingMenuItem = ({ category, items = [] }) => {
         className="has-background-primary-light py-4 px-5"
         style={{ height: "calc(100% - 2rem)" }}
       >
-        <h3 className="has-text-primary-dark">{category}</h3>
+        <h3>{category}</h3>
         {items.map((item) => (
           <div className="level is-mobile" key={item.name}>
             <div className="level-left">{item.name}</div>

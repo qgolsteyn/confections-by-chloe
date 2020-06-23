@@ -41,14 +41,14 @@ export const IndexPageTemplate = ({
           <p className="is-size-5">{description}</p>
           <div className="mt-6">
             <a
-              className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4"
+              className="is-size-4 has-background-primary-light py-1 px-1 mb-4"
               href={`mailto:${email}`}
             >
               💌 {email}
             </a>
           </div>
           <div className="mt-5 ">
-            <span className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4">
+            <span className="is-size-4 has-background-primary-light py-1 px-1 mb-4">
               📍 Lethbridge, AB
             </span>
           </div>
@@ -107,7 +107,7 @@ export const IndexPageTemplate = ({
             {email && (
               <div className="mt-6">
                 <a
-                  className="is-size-4 has-text-primary-dark has-background-primary-light py-1 px-1 mb-4"
+                  className="is-size-4 has-background-primary-light py-1 px-1 mb-4"
                   href={`mailto:${email}`}
                 >
                   💌 {email}
