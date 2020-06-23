@@ -47,7 +47,7 @@ pricing:
       - name: Cinnamon buns (6) with cream cheese icing
         price: $20.00
 orderTitle: Make an order!
-orderInfo: For inquiries please contact chloedevoy@gmail.com
+orderInfo: "For inquiries please contact:"
 email: chloedevoy@gmail.com
 phone: ""
 instagram: https://www.instagram.com/confections.bychloe/
